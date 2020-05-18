@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="toolbar">
+        <div id="rad" > <b> Current size : 4  </b> </div>
+        <div id="draw" onclick="drawLines()"> <b> Draw </b> </div>
+        <div id="shapes" onclick="drawShapes()"> <b> Shapes </b> </div>
+        <div id="increase" onclick="increase_fnct()"> <b> Stroke (+) </b> </div>
+        <div id="decrease" onclick="decrease_fnct()">  <b> Stroke(-) </b></div>
+        <div id="colors"> 
+            <div class="swatch" id="green" onclick="choose_green()">  </div>
+            <div class="swatch" id="yellow" onclick="choose_yellow()">  </div>
+            <div class="swatch" id="pink" onclick="choose_pink()"> </div>
+            <div class="swatch" id="gray" onclick="choose_gray()">  </div>
+        </div>
+        <div id="delete" onclick="erase()"> <b> Erase </b> </div>
+
+    </div>
+    <canvas id="circle_mousedown" style="margin:0; display:block; border:1px solid black"> </canvas>
+   
+    <script src="js/java.js"> </script> 
+    <script src="js/colors.js"> </script> 
+    <script src="js/size.js"> </script> 
+    <!--<script src="js/getCanvas.js"> </script> --> 
+</body>
+</html>
