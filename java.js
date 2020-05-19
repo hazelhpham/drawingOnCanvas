@@ -1,5 +1,3 @@
-//every time you click, a circle with a radius of 2 pops upppp 
-
 //create variables 
 var canvas = document.getElementById('circle_mousedown');
 var context = canvas.getContext('2d');
@@ -11,18 +9,18 @@ var mouseX, mouseY;
 var snapshot;
 
 
-//set canvas có chiều dài và rộng bằng với browser 
+//set canvas with the height and width of the browser
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 //-------------------------------------------END SET VARIABLES-------------------------------------------------------------------------
 
-//function to get the data of the shapes 
+//function to get the data of the images drawn on the canvas 
 function takeSnapshot() {
     snapshot = context.getImageData(0, 0, canvas.width, canvas.height);
 }
 
-//function to store the data of the shapes
+//function to store the data of the images drawn on the canvas
 function restoreSnapshot() {
     context.putImageData(snapshot, 0, 0);
 }
@@ -38,7 +36,7 @@ var draw = function (e) {
         context.fill();
     }
 }
-
+//create rectangle shapes 
 var createShape = function (e) {
     if (dragging) {
         context.clearRect(0, 0, canvas.width, canvas.height);
