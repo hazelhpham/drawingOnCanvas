@@ -2,15 +2,17 @@
 //create variables 
 var canvas = document.getElementById('circle_mousedown');
 var context = canvas.getContext('2d');
-
-
 var green = document.getElementById('green');
 var yellow = document.getElementById('yellow');
 var pink = document.getElementById('pink');
 var gray = document.getElementById('gray');
 
-//when users choose yellow, this function will add effects onto the yellow 
-//box on the tool bar 
+
+/*
+when users choose yellow on the panel, this function will add effects onto the yellow 
+box on the tool bar. 
+the color of the pen will change into yellow.
+*/
 function choose_yellow() {
     if (yellow) {
         context.fillStyle = 'yellow';
@@ -24,8 +26,11 @@ function choose_yellow() {
         pink.style.boxShadow = '0px 0px 0px 0px white';
     }
 }
-//when users choose green, this function will add effects onto the green 
-//box on the tool bar 
+/*
+when users choose green on the panel, this function will add effects onto the green
+box on the tool bar. 
+the color of the pen will change into green.
+*/
 function choose_green() {
     if (green) {
         context.fillStyle = 'green';
@@ -39,8 +44,11 @@ function choose_green() {
         yellow.style.boxShadow = '0px 0px 0px 0px white';
     }
 }
-//when users choose gray, this function will add effects onto the gray 
-//box on the tool bar 
+/*
+when users choose gray on the panel, this function will add effects onto the gray 
+box on the tool bar. 
+the color of the pen will change into gray.
+*/
 function choose_gray() {
     if (gray) {
         context.fillStyle = 'gray';
@@ -54,8 +62,11 @@ function choose_gray() {
         green.style.boxShadow = '0px 0px 0px 0px white';
     }
 }
-//when users choose pink, this function will add effects onto the pink 
-//box on the tool bar 
+/*
+when users choose pink on the panel, this function will add effects onto the pink 
+box on the tool bar. 
+the color of the pen will change into pink.
+*/
 function choose_pink() {
     if (pink) {
         context.fillStyle = 'pink';
