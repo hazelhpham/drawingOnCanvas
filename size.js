@@ -19,5 +19,4 @@ function decrease_fnct() {
     document.getElementById('rad').innerHTML = "Current size : " + radius;
     document.getElementById('rad').fontWeight = 'bold';
 }
-
-/////--------------------------------------END -------------------------------------------------   
+//--------------------------------------END -------------------------------------------------   
