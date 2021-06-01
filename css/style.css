@@ -1,1 +1,46 @@
 
+body{
+    width:100%;
+    height:auto;
+}
+#toolbar > div{
+    float:left;
+    border: 1px solid white;
+    padding:2%;
+    height:40;
+    width:8%;
+    text-align:center;
+}
+#toolbar > div:hover{
+    background-color:#DCDCDC;
+    color:white;
+    border-radius:20%;
+}
+ #color{
+     float:right;
+     width:50px;
+    
+     
+ }
+
+ .swatch{
+     width:30px;
+     height:30px;
+     border-radius:20px;
+     box-shadow:inset 0px;
+     float:left;
+ }
+
+ 
+#green{
+    background-color:lightgreen;
+}
+#pink{
+    background-color:pink;
+}
+#gray{
+    background-color:gray;
+}
+#yellow{
+    background-color:yellow;
+}
